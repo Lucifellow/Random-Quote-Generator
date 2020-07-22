@@ -1,0 +1,141 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: radial-gradient(circle, #57e633 0%, #e8eee5 60%, #20742f 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#quote-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+  -webkit-border: 5px solid;
+  -moz-border: 5px solid;
+  -ms-border: 5px solid;
+  border: 5px solid;
+  background-color: snow;
+  border-image: conic-gradient(#c23232, #45eeee, #41db63, #eeee5e, #e93f0c) 1;
+  border-radius: 8%;
+}
+
+#text {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #469731;
+}
+
+#author {
+  padding-left: 17vh;
+  font-size: 20px;
+  font-weight: bold;
+  color: #397e28;
+}
+
+#button-container {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+#new-quote {
+  background-color: #397e28;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 1vw;
+  font-size: 20px;
+  padding: 2vw;
+}
+
+#tweet-quote {
+  background-color: #1da1f2;
+  color: white;
+  padding: 2vw;
+  margin-right: 0.5vw;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 5%;
+}
+
+@media (min-width: 360px) and (max-width: 420px) {
+  #new-quote {
+    margin-left: 11vw;
+  }
+
+  #tweet-quote {
+    margin-right: 3vw;
+  }
+
+  #author {
+    padding-left: 49vw;
+  }
+}
+@media (min-width: 421px) and (max-width: 720px) {
+  #new-quote {
+    margin-left: 19vw;
+  }
+
+  #tweet-quote {
+    margin-right: 2vw;
+  }
+
+  #author {
+    padding-left: 48vw;
+  }
+}
+@media (min-width: 721px) and (max-width: 1020px) {
+  #new-quote {
+    margin-left: 16vw;
+  }
+
+  #tweet-quote {
+    margin-right: 4vw;
+  }
+
+  #author {
+    padding-left: 32vw;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1429px) {
+  #new-quote {
+    margin-left: 27vw;
+  }
+
+  #tweet-quote {
+    margin-right: 3vw;
+  }
+
+  #author {
+    padding-left: 43vw;
+  }
+}
+@media (min-width: 1430px) and (max-width: 2100px) {
+  #new-quote {
+    margin-left: 35vw;
+  }
+
+  #tweet-quote {
+    margin-right: 3vw;
+  }
+
+  #author {
+    padding-left: 19vw;
+  }
+}
+@media (min-width: 2101px) {
+  #new-quote {
+    margin-left: 45vw;
+  }
+
+  #tweet-quote {
+    margin-right: 2vw;
+  }
+
+  #author {
+    padding-left: 10vw;
+  }
+
+  #quote-box {
+    border-radius: 4%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,145 @@
+
+$main-font:"Montserrat", sans-serif;
+$quote-font-size:25px;
+$author-font-size:20px;
+
+//For borders
+@mixin border($x,$type){
+    -webkit-border:$x $type;
+    -moz-border:$x $type;
+    -ms-border:$x $type;
+    border:$x $type;
+}
+
+body{
+    font-family:$main-font;
+    background: radial-gradient(circle, rgba(87,230,51,1) 0%, rgba(232,238,229,1) 60%, rgb(32, 116, 47) 100%);
+    background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+//main container
+#quote-box{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+    @include border(5px,solid);
+    background-color: rgb(255,250,250);
+    border-image:conic-gradient(rgb(194, 50, 50),rgb(69, 238, 238),rgb(65, 219, 99),rgb(238, 238, 94),rgb(233, 63, 12))1;
+    border-radius: 8%;
+}
+
+#text{
+    font-size:$quote-font-size;
+    font-weight:bolder;
+    color: rgb(70, 151, 49);
+}
+
+#author{
+    padding-left: 17vh ;
+    font-size: $author-font-size;
+    font-weight:bold;
+    color: rgb(57, 126, 40);
+}
+
+#button-container{
+    margin-top: 1vh;
+    margin-bottom:2vh;
+}
+
+#new-quote{
+    background-color: rgb(57, 126, 40);
+    font-family:$main-font ;
+    margin-left:1vw;
+    font-size: 20px;
+    padding: 2vw;
+}
+
+#tweet-quote{
+    background-color: rgb(29,161,242);
+    color:white;
+    padding: 2vw;
+    margin-right: 0.5vw;
+    font-size: 25px;
+    text-decoration:none;
+    border-radius:5%;
+}
+
+@media (min-width:360px) and (max-width:420px){
+    #new-quote{
+        margin-left:11vw;
+    }
+    #tweet-quote{
+        margin-right:3vw;
+    }
+    #author{
+        padding-left: 49vw;
+    }
+}
+
+@media (min-width:421px) and (max-width:720px){
+    #new-quote{
+        margin-left:19vw;
+    }
+    #tweet-quote{
+        margin-right:2vw;
+    }
+    #author{
+        padding-left: 48vw;
+    }
+}
+
+@media (min-width:721px) and (max-width:1020px){
+    #new-quote{
+        margin-left:16vw;
+    }
+    #tweet-quote{
+        margin-right:4vw;
+    }
+    #author{
+        padding-left: 32vw;
+    }
+}
+
+@media (min-width:1021px) and (max-width:1429px){
+    #new-quote{
+        margin-left:27vw;
+    }
+    #tweet-quote{
+        margin-right:3vw;
+    }
+    #author{
+        padding-left: 43vw;
+    }
+}
+
+@media (min-width:1430px) and (max-width:2100px){
+    #new-quote{
+        margin-left:35vw;
+    }
+    #tweet-quote{
+        margin-right:3vw;
+    }
+    #author{
+        padding-left: 19vw;
+    }
+}
+
+@media (min-width:2101px){
+    #new-quote{
+        margin-left:45vw;
+        
+    }
+    #tweet-quote{
+        margin-right:2vw;
+    }
+    #author{
+        padding-left: 10vw;
+    }
+    #quote-box{
+        border-radius: 4%;
+    }
+
+}
+
