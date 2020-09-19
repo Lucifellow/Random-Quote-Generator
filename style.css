@@ -16,7 +16,7 @@ body {
   border: 5px solid;
   background-color: snow;
   border-image: conic-gradient(#c23232, #45eeee, #41db63, #eeee5e, #e93f0c) 1;
-  border-radius: 8%;
+  border-radius: 10px;
 }
 
 #text {
